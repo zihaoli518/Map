@@ -97,7 +97,7 @@ const DotenvWebpackPlugin = require('dotenv-webpack');
           target: "http://localhost:3000",
           secure: false,
         },
-        "/assets": {
+        "/public": {
           target: "http://localhost:3000",
           secure: false,
         },
