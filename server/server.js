@@ -14,6 +14,14 @@ app.get('/', (req, res) => {
   return res.status(200).sendFile(path.join(__dirname, '../public/index.html'));
 });
 
+app.use('/public', 
+express.static(path.join(__dirname, '../public')));
+
+// app.get('/index.scss', (req, res) => {
+//   console.log('get/ complete')
+//   return res.status(200).sendFile(path.join(__dirname, '../index.scss'));
+// });
+
 
 
 app.listen(PORT); 
